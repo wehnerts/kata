@@ -9,7 +9,6 @@ public class FirstApproach {
 
     private static int search(int searchedNumber){
         int step = -2;
-        int count=0;
         do {
             int indexToCheck = indexMin + (indexMax - indexMin) / 2;
             System.out.println("Index to Check: "+indexToCheck+" indexMin: "+indexMin+" IndexMax: "+indexMax);
@@ -26,7 +25,7 @@ public class FirstApproach {
                indexMin = indexToCheck;
 
             }
-            count++;
+
         }while (step==-2);
 
        return step;
