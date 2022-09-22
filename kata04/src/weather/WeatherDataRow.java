@@ -1,10 +1,9 @@
 package weather;
 
-public class WeatherData {
-    private int day=0;
+public class WeatherDataRow {
+    private int day;
     private int maxTemperature;
     private int minTemperature;
-
     public void setDay(int day) {
         this.day = day;
     }
@@ -22,5 +21,8 @@ public class WeatherData {
     }
     public int getMinTemperature() {
         return minTemperature;
+    }
+    public int calcTemperatureDiff(){
+        return (maxTemperature-minTemperature);
     }
 }
